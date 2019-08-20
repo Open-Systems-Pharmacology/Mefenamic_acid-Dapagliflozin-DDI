@@ -1,0 +1,314 @@
+{
+  "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v1.0/OSP_Qualification_Plan_Schema.json",
+  "Projects": [
+    {
+      "Id": "Mefenamic_acid",
+      "Path": "https://raw.githubusercontent.com/Incei/Mefenamic_acid/master/Mefenamic_acid.json",
+      "BuildingBlocks": []
+    },
+    {
+      "Id": "Dapagliflozin",
+      "Path": "https://raw.githubusercontent.com/Incei/Dapagliflozin/master/Dapagliflozin.json",
+      "BuildingBlocks": []
+    },
+    {
+      "Id": "Mefenamic_acid-Dapagliflozin-DDI",
+      "Path": "https://raw.githubusercontent.com/Incei/Mefenamic_acid-Dapagliflozin-DDI/master/Mefenamic_acid-Dapagliflozin-DDI.json",
+      "BuildingBlocks": [
+        {
+          "Type": "Compound",
+          "Name": "Mefenamic_acid",
+          "Project": "Mefenamic_acid"
+        },
+        {
+          "Type": "Compound",
+          "Name": "Dapagliflozin",
+          "Project": "Dapagliflozin"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Ponstan capsule",
+          "Project": "Mefenamic_acid"
+        }
+      ]
+    }
+  ],
+  "ObservedDataSets": [
+    {
+      "Id": "DDI Ratios",
+      "Path": "https://raw.githubusercontent.com/sfrechen/Database-for-observed-data/master/DDI.csv",
+      "Type": "DDIRatio"
+    }
+  ],
+  "Plots": {
+    "PlotSettings": {
+      "ChartWidth": 500,
+      "ChartHeight": 400,
+      "Fonts": {
+        "AxisSize": 11,
+        "LegendSize": 9,
+        "OriginSize": 9,
+        "FontFamilyName": "Arial",
+        "WatermarkSize": 40
+      }
+    },
+    "AxesSettings": {
+      "ComparisonTimeProfile": [
+        {
+          "Unit": "h",
+          "Dimension": "Time",
+          "Type": "X",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Unit": "ng/ml",
+          "Dimension": "Concentration (mass)",
+          "Type": "Y",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "DDIRatioPlotsPredictedVsObserved": [
+        {
+          "Unit": "",
+          "Dimension": "Dimensionless",
+          "Type": "X",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Unit": "",
+          "Dimension": "Dimensionless",
+          "Type": "Y",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "DDIRatioPlotsResidualsVsObserved": [
+        {
+          "Unit": "",
+          "Dimension": "Dimensionless",
+          "Type": "X",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Unit": "",
+          "Dimension": "Dimensionless",
+          "Type": "Y",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ]
+    },
+    "ComparisonTimeProfilePlots": [
+      {
+        "SectionId": 26,
+        "Title": "Kasichayanula 2013a",
+        "SimulationDuration": 48,
+        "TimeUnit": "h",
+        "OutputMappings": [
+          {
+            "Project": "Mefenamic acid + Dapagliflozin",
+            "Simulation": "DDI Control - Dapagliflozin - Kasichayanula 2013a",
+            "Output": "Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Kasichayanula 2013a - Study 2: Control (Perpetrator Placebo) - Dapagliflozin - PO - 10 mg - Plasma - agg. (n=16)",
+            "StartTime": 0,
+            "TimeUnit": "h",
+            "Color": "#2166ac",
+            "Caption": "Control (without mefenamic acid)",
+            "Symbol": "Circle"
+          },
+          {
+            "Project": "Mefenamic acid + Dapagliflozin",
+            "Simulation": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a",
+            "Output": "Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Kasichayanula 2013a - Study 2: with Perpetrator (Mefenamic Acid) - Dapagliflozin - PO - 10 mg - Plasma - agg. (n=16)",
+            "StartTime": 24,
+            "TimeUnit": "h",
+            "Color": "#b2182b",
+            "Caption": "Treatment (with Mefenamic acid)",
+            "Symbol": "Square"
+          }
+        ]
+      },
+    ],
+    "DDIRatioPlots": [
+      {
+        "SectionId": 5,
+        "Title": "UGT1A9 DDI",
+        "PKParameter": "AUC|CMAX",
+        "PlotType": "predictedVsObserved|residualsVsObserved",
+        "Groups": [
+          {
+            "Caption": "Mefenamic acid + Dapagliflozin",
+            "Color": "#FF0000",
+            "Symbol": "Square",
+            "DDIRatios": [
+              {
+                "Output": "Organism|PeripheralVenousBlood|Raltegravir|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 571,
+                "SimulationControl": {
+                  "Project": "Mefenamic_acid-Dapagliflozin-DDI",
+                  "Simulation": "DDI Control - Dapagliflozin - Kasichayanula 2013a",
+                  "StartTime": 0,
+                  "EndTime": 9999,
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Mefenamic_acid-Dapagliflozin-DDI",
+                  "Simulation": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a",
+                  "StartTime": 24,
+                  "EndTime": 9999,
+                  "TimeUnit": "h"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Inputs": [
+    {
+      "Type": "Compound",
+      "Name": "Mefenamic_acid",
+      "Project": "Mefenamic_acid"
+    },
+    {
+      "Type": "Compound",
+      "Name": "Dapagliflozin",
+      "Project": "Dapagliflozin"
+    },
+    {
+      "Type": "Formulation",
+      "Name": "Ponstan capsule",
+      "Project": "Mefenamic_acid"
+    }
+  ],
+  "Sections": [
+    {
+      "Id": 1,
+      "Title": "Introduction",
+      "Content": "Content/Empty.md",
+      "Sections": [
+        {
+          "Id": 2,
+          "Title": "Objective",
+          "Content": "Content/Empty.md"
+        },
+        {
+          "Id": 3,
+          "Title": "CYP3A4 DDI Network",
+          "Content": "Content/Empty.md"
+        },
+        {
+          "Id": 4,
+          "Title": "Qualification Workflow",
+          "Content": "Content/Empty.md"
+        }
+      ]
+    },
+    {
+      "Id": 5,
+      "Title": "Qualification of Use Case UGT1A9-mediated DDI",
+      "Content": "Content/Empty.md"
+    },
+    {
+      "Id": 6,
+      "Title": "Appendix",
+      "Content": "Content/Empty.md",
+      "Sections": [
+        {
+          "Id": 7,
+          "Title": "Open Systems Pharmacology Suite (OSPS) Introduction",
+          "Content": "Content/Empty.md"
+        },
+        {
+          "Id": 8,
+          "Title": "Mathematical Implementation of drug-drug interactions",
+          "Content": "Content/Empty.md"
+        },
+        {
+          "Id": 9,
+          "Title": "Evaluation of victim and perpetrator models",
+          "Content": "Content/Empty.md",
+          "Sections": [
+            {
+              "Id": 10,
+              "Title": "Raltegravir model",
+              "Content": "Content/Empty.md",
+              "Sections": [
+                {
+                  "Id": 11,
+                  "Title": "Input parameters",
+                  "Content": "Content/Empty.md"
+                },
+                {
+                  "Id": 12,
+                  "Title": "Model evaluation",
+                  "Content": "Content/Empty.md",
+                  "Sections": [
+                    {
+                      "Id": 13,
+                      "Title": "Concentration-time profiles",
+                      "Content": "Content/Empty.md"
+                    },
+                    {
+                      "Id": 14,
+                      "Title": "Overall goodness of fit",
+                      "Content": "Content/Empty.md"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 15,
+              "Title": "Atazanavir model",
+              "Content": "Content/Empty.md",
+              "Sections": [
+                {
+                  "Id": 16,
+                  "Title": "Input parameters",
+                  "Content": "Content/Empty.md"
+                },
+                {
+                  "Id": 17,
+                  "Title": "Model evaluation",
+                  "Content": "Content/Empty.md",
+                  "Sections": [
+                    {
+                      "Id": 18,
+                      "Title": "Concentration-time profiles",
+                      "Content": "Content/Empty.md"
+                    },
+                    {
+                      "Id": 19,
+                      "Title": "Overall goodness of fit",
+                      "Content": "Content/Empty.md"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": 25,
+          "Title": "Evaluation of DDI network (coupled perpetrator / victim simulations)",
+          "Content": "Content/Empty.md",
+          "Sections": [
+            {
+              "Id": 26,
+              "Title": "Mefenamic acid-Dapagliflozin DDI",
+              "Content": "Content/Empty.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
