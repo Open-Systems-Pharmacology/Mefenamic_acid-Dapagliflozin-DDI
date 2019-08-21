@@ -132,7 +132,7 @@
             "Symbol": "Square"
           }
         ]
-      },
+      }
     ],
     "DDIRatioPlots": [
       {
@@ -149,7 +149,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Raltegravir|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 571,
+                "ObservedDataRecordId": 642,
                 "SimulationControl": {
                   "Project": "Mefenamic_acid-Dapagliflozin-DDI",
                   "Simulation": "DDI Control - Dapagliflozin - Kasichayanula 2013a",
