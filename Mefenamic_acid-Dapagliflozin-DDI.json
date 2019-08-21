@@ -1832,7 +1832,7 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)"
       ],
-      "Individual": "Standard_Adult_Veri",
+      "Individual": "Standard_Adult_UGT",
       "Compounds": [
         {
           "Name": "Dapagliflozin",
