@@ -3,21 +3,21 @@
   "Projects": [
     {
       "Id": "Mefenamic_acid",
-      "Path": "https://raw.githubusercontent.com/Incei/Mefenamic_acid/master/Mefenamic_acid.json",
+      "Path": "C:/Me_Da-DDI/Input/Mefenamic_acid.json",
       "BuildingBlocks": []
     },
     {
       "Id": "Dapagliflozin",
-      "Path": "https://raw.githubusercontent.com/Incei/Dapagliflozin/master/Dapagliflozin.json",
+      "Path": "C:/Me_Da-DDI/Input/Dapagliflozin.json",
       "BuildingBlocks": []
     },
     {
       "Id": "Mefenamic_acid-Dapagliflozin-DDI",
-      "Path": "https://raw.githubusercontent.com/Incei/Mefenamic_acid-Dapagliflozin-DDI/master/Mefenamic_acid-Dapagliflozin-DDI.json",
+      "Path": "C:/Me_Da-DDI/Input/Mefenamic_acid-Dapagliflozin-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
-          "Name": "Mefenamic_acid",
+          "Name": "Mefenamic acid",
           "Project": "Mefenamic_acid"
         },
         {
@@ -36,7 +36,7 @@
   "ObservedDataSets": [
     {
       "Id": "DDI Ratios",
-      "Path": "https://raw.githubusercontent.com/sfrechen/Database-for-observed-data/master/DDI.csv",
+      "Path": "C:/Me_Da-DDI/Input/DDI.csv",
       "Type": "DDIRatio"
     }
   ],
@@ -110,7 +110,7 @@
         "TimeUnit": "h",
         "OutputMappings": [
           {
-            "Project": "Mefenamic acid + Dapagliflozin",
+            "Project": "Mefenamic_acid-Dapagliflozin-DDI",
             "Simulation": "DDI Control - Dapagliflozin - Kasichayanula 2013a",
             "Output": "Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
             "ObservedData": "Kasichayanula 2013a - Study 2: Control (Perpetrator Placebo) - Dapagliflozin - PO - 10 mg - Plasma - agg. (n=16)",
@@ -121,8 +121,8 @@
             "Symbol": "Circle"
           },
           {
-            "Project": "Mefenamic acid + Dapagliflozin",
-            "Simulation": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a",
+            "Project": "Mefenamic_acid-Dapagliflozin-DDI",
+            "Simulation": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a",
             "Output": "Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
             "ObservedData": "Kasichayanula 2013a - Study 2: with Perpetrator (Mefenamic Acid) - Dapagliflozin - PO - 10 mg - Plasma - agg. (n=16)",
             "StartTime": 24,
@@ -147,7 +147,7 @@
             "Symbol": "Square",
             "DDIRatios": [
               {
-                "Output": "Organism|PeripheralVenousBlood|Raltegravir|Plasma (Peripheral Venous Blood)",
+                "Output": "Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
                 "ObservedDataRecordId": 642,
                 "SimulationControl": {
@@ -159,7 +159,7 @@
                 },
                 "SimulationDDI": {
                   "Project": "Mefenamic_acid-Dapagliflozin-DDI",
-                  "Simulation": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a",
+                  "Simulation": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a",
                   "StartTime": 24,
                   "EndTime": 9999,
                   "TimeUnit": "h"
@@ -171,23 +171,7 @@
       }
     ]
   },
-  "Inputs": [
-    {
-      "Type": "Compound",
-      "Name": "Mefenamic_acid",
-      "Project": "Mefenamic_acid"
-    },
-    {
-      "Type": "Compound",
-      "Name": "Dapagliflozin",
-      "Project": "Dapagliflozin"
-    },
-    {
-      "Type": "Formulation",
-      "Name": "Ponstan capsule",
-      "Project": "Mefenamic_acid"
-    }
-  ],
+  "Inputs": [],
   "Sections": [
     {
       "Id": 1,
@@ -238,7 +222,7 @@
           "Sections": [
             {
               "Id": 10,
-              "Title": "Raltegravir model",
+              "Title": "Dapagliflozin model",
               "Content": "Content/Empty.md",
               "Sections": [
                 {

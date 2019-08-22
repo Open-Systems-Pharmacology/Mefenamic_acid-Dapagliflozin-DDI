@@ -1985,7 +1985,7 @@
       ]
     },
     {
-      "Name": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a",
+      "Name": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a",
       "Model": "4Comp",
       "ObservedData": [
         "Kasichayanula 2013a - Study 2: with Perpetrator (Mefenamic Acid) - Dapagliflozin - PO - 10 mg - Plasma - agg. (n=16)"
@@ -2432,9 +2432,9 @@
           ],
           "Curves": [
             {
-              "Name": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a-Dapagliflozin-Peripheral Venous Blood-Plasma-Concentration",
+              "Name": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a-Dapagliflozin-Peripheral Venous Blood-Plasma-Concentration",
               "X": "Time",
-              "Y": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a|Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
+              "Y": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a|Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 1
@@ -2452,9 +2452,9 @@
               }
             }
           ],
-          "Name": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a",
-          "Title": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a",
-          "OriginText": "Mefenamic_acid-Dapagliflozin-DDI\nDDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a\n2019-08-20 16:18"
+          "Name": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a",
+          "Title": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a",
+          "OriginText": "Mefenamic_acid-Dapagliflozin-DDI\nDDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a\n2019-08-20 16:18"
         },
         {
           "Axes": [
@@ -2483,9 +2483,9 @@
           ],
           "Curves": [
             {
-              "Name": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a-Dapagliflozin-Peripheral Venous Blood-Plasma-Concentration",
+              "Name": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a-Dapagliflozin-Peripheral Venous Blood-Plasma-Concentration",
               "X": "Time",
-              "Y": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a|Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
+              "Y": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a|Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 1
@@ -2503,9 +2503,9 @@
               }
             }
           ],
-          "Name": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a 1",
-          "Title": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a",
-          "OriginText": "Mefenamic_acid-Dapagliflozin-DDI\nDDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a\n2019-08-20 16:18"
+          "Name": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a 1",
+          "Title": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a",
+          "OriginText": "Mefenamic_acid-Dapagliflozin-DDI\nDDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a\n2019-08-20 16:18"
         }
       ],
       "Interactions": [
