@@ -1343,12 +1343,12 @@
           "Parameters": [
             {
               "Name": "Lipophilicity",
-              "Value": 2.6495139838,
+              "Value": 2.6719093089,
               "Unit": "Log Units",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'PI full  (perm)' on 2019-08-06 14:46"
+                "Description": "Value updated from 'PI full  (perm)' on 2019-08-23 15:34"
               }
             }
           ]
@@ -1376,20 +1376,21 @@
           "Parameters": [
             {
               "Name": "Solubility at reference pH",
-              "Value": 0.2100844168,
+              "Value": 0.2210041453,
               "Unit": "mg/ml",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'PI full  (perm)' on 2019-08-06 14:46"
+                "Description": "Value updated from 'PI full  (perm)' on 2019-08-23 15:34"
               }
             },
             {
               "Name": "Reference pH",
               "Value": 7.0,
               "ValueOrigin": {
-                "Source": "Database",
-                "Description": "DrugBank DB06292"
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'PI full  (perm)' on 2019-08-23 15:34"
               }
             }
           ]
@@ -1402,12 +1403,12 @@
           "Parameters": [
             {
               "Name": "Specific intestinal permeability (transcellular)",
-              "Value": 3.8347545732E-05,
+              "Value": 3.9684694792E-05,
               "Unit": "cm/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'PI full  (perm)' on 2019-08-06 14:46"
+                "Description": "Value updated from 'PI full  (perm)' on 2019-08-23 15:34"
               }
             }
           ]
@@ -1420,12 +1421,12 @@
           "Parameters": [
             {
               "Name": "Permeability",
-              "Value": 0.00041657167125,
+              "Value": 0.00037527645658,
               "Unit": "cm/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'PI full  (perm)' on 2019-08-06 14:46"
+                "Description": "Value updated from 'PI full  (perm)' on 2019-08-23 15:34"
               }
             }
           ]
@@ -1460,12 +1461,12 @@
             },
             {
               "Name": "CLspec/[Enzyme]",
-              "Value": 0.402175146,
+              "Value": 0.399443557,
               "Unit": "l/µmol/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'PI full  (perm)' on 2019-08-06 14:46"
+                "Description": "Value updated from 'PI full  (perm)' on 2019-08-23 15:34"
               }
             }
           ]
@@ -1488,12 +1489,12 @@
             },
             {
               "Name": "CLspec/[Enzyme]",
-              "Value": 0.0072288071857,
+              "Value": 0.0066043366201,
               "Unit": "l/µmol/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'PI full  (perm)' on 2019-08-06 14:46"
+                "Description": "Value updated from 'PI full  (perm)' on 2019-08-23 15:34"
               }
             }
           ]
@@ -1505,11 +1506,11 @@
           "Parameters": [
             {
               "Name": "GFR fraction",
-              "Value": 0.8944188606,
+              "Value": 0.7899801465,
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'PI full  (perm)' on 2019-08-06 14:46"
+                "Description": "Value updated from 'PI full  (perm)' on 2019-08-23 15:34"
               }
             }
           ]
@@ -1531,12 +1532,12 @@
             },
             {
               "Name": "CLspec/[Enzyme]",
-              "Value": 0.1397810065,
+              "Value": 0.1432967727,
               "Unit": "l/µmol/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'PI full  (perm)' on 2019-08-06 14:46"
+                "Description": "Value updated from 'PI full  (perm)' on 2019-08-23 15:34"
               }
             }
           ]
@@ -1549,10 +1550,7 @@
       "Parameters": [
         {
           "Name": "Cl",
-          "Value": 1.0,
-          "ValueOrigin": {
-            "Source": "Unknown"
-          }
+          "Value": 1.0
         },
         {
           "Name": "Molecular weight",
@@ -1827,6 +1825,21 @@
           "Path": "Applications|Dapagliflozin - PO SD 10 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Dapagliflozin|Blood/Plasma concentration ratio",
+          "Value": 0.88,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Dapagliflozin|logP (veg.oil/water)",
+          "Value": 2.0831076805,
+          "Unit": "Log Units",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
         }
       ],
       "OutputSelections": [
@@ -1985,7 +1998,7 @@
       ]
     },
     {
-      "Name": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a",
+      "Name": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a",
       "Model": "4Comp",
       "ObservedData": [
         "Kasichayanula 2013a - Study 2: with Perpetrator (Mefenamic Acid) - Dapagliflozin - PO - 10 mg - Plasma - agg. (n=16)"
@@ -2156,6 +2169,21 @@
           "Path": "Applications|Mefenamic acid - PO MD 500 mg loading / 250 mg every 6 h|Ponstan capsule|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Dapagliflozin|Blood/Plasma concentration ratio",
+          "Value": 0.88,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Dapagliflozin|logP (veg.oil/water)",
+          "Value": 2.0831076805,
+          "Unit": "Log Units",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
         }
       ],
       "OutputSelections": [
@@ -2432,9 +2460,9 @@
           ],
           "Curves": [
             {
-              "Name": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a-Dapagliflozin-Peripheral Venous Blood-Plasma-Concentration",
+              "Name": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a-Dapagliflozin-Peripheral Venous Blood-Plasma-Concentration",
               "X": "Time",
-              "Y": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a|Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
+              "Y": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a|Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 1
@@ -2483,9 +2511,9 @@
           ],
           "Curves": [
             {
-              "Name": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a-Dapagliflozin-Peripheral Venous Blood-Plasma-Concentration",
+              "Name": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a-Dapagliflozin-Peripheral Venous Blood-Plasma-Concentration",
               "X": "Time",
-              "Y": "DDI Treatment - Mefenamic acid_Dapagliflozin - Kasichayanula 2013a|Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
+              "Y": "DDI Treatment - Mefenamic acid/Dapagliflozin - Kasichayanula 2013a|Organism|PeripheralVenousBlood|Dapagliflozin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 1
@@ -2635,17 +2663,17 @@
             "MolWeight": 408.87
           },
           "Values": [
-            107.4542,
-            137.6423,
-            120.751808,
-            90.21964,
-            69.75128,
-            32.03501,
-            12.76998,
-            7.467561
+            0.107454196,
+            0.137642309,
+            0.120751806,
+            0.09021965,
+            0.06975128,
+            0.03203501,
+            0.01276998,
+            0.007467561
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -2791,17 +2819,17 @@
             "MolWeight": 408.87
           },
           "Values": [
-            124.9871,
-            153.2267,
-            149.6484,
-            115.219,
-            99.29609,
-            53.46404,
-            21.8613,
-            14.93512
+            0.124987096,
+            0.153226689,
+            0.1496484,
+            0.115219004,
+            0.0992960855,
+            0.05346404,
+            0.0218613,
+            0.01493512
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
