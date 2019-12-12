@@ -1310,12 +1310,12 @@
           "Parameters": [
             {
               "Name": "Ki_c",
-              "Value": 0.291,
+              "Value": 0.30,
               "Unit": "µmol/l"
             },
             {
               "Name": "Ki_u",
-              "Value": 20.661,
+              "Value": 21.3,
               "Unit": "µmol/l"
             }
           ]
