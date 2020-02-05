@@ -1091,50 +1091,6 @@
       "PlasmaProteinBindingPartner": "Albumin",
       "Lipophilicity": [
         {
-          "Name": "Kuentz 2008",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 3.52,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
-          "Name": "Simcyp",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 5.3,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
-          "Name": "DrugBank",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 5.12,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
-          "Name": "Vitas-M Lab",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 5.33,
-              "Unit": "Log Units"
-            }
-          ]
-        },
-        {
           "Name": "Optimized",
           "Parameters": [
             {
@@ -1152,19 +1108,7 @@
       ],
       "FractionUnbound": [
         {
-          "Name": "Kuentz 2008",
-          "IsDefault": false,
-          "Species": "Human",
-          "Parameters": [
-            {
-              "Name": "Fraction unbound (plasma, reference value)",
-              "Value": 1.0,
-              "Unit": "%"
-            }
-          ]
-        },
-        {
-          "Name": "Simcyp",
+          "Name": "Goosen 2016",
           "Species": "Human",
           "Parameters": [
             {
@@ -1181,36 +1125,6 @@
         }
       ],
       "Solubility": [
-        {
-          "Name": "Kuentz 2008",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Solubility at reference pH",
-              "Value": 46.0,
-              "Unit": "µg/ml"
-            },
-            {
-              "Name": "Reference pH",
-              "Value": 5.5
-            }
-          ]
-        },
-        {
-          "Name": "Water solubility (DrugBank)",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Solubility at reference pH",
-              "Value": 20.0,
-              "Unit": "mg/l"
-            },
-            {
-              "Name": "Reference pH",
-              "Value": 7.0
-            }
-          ]
-        },
         {
           "Name": "Optimized",
           "Parameters": [
@@ -1244,19 +1158,6 @@
                 "Method": "ParameterIdentification",
                 "Description": "Value updated from 'PI (Pint, CLspec, Lipo, Solub, meal; fu=1.9, Disso fix) FINAL' on 2019-08-06 18:52"
               }
-            }
-          ]
-        }
-      ],
-      "Permeability": [
-        {
-          "Name": "Optimized",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Permeability",
-              "Value": 1.0,
-              "Unit": "cm/min"
             }
           ]
         }
@@ -1310,7 +1211,7 @@
           "Parameters": [
             {
               "Name": "Ki_c",
-              "Value": 0.30,
+              "Value": 0.3,
               "Unit": "µmol/l"
             },
             {
@@ -1399,7 +1300,6 @@
       "IntestinalPermeability": [
         {
           "Name": "Optimized",
-          "IsDefault": false,
           "Parameters": [
             {
               "Name": "Specific intestinal permeability (transcellular)",
@@ -1417,7 +1317,6 @@
       "Permeability": [
         {
           "Name": "Optimized",
-          "IsDefault": false,
           "Parameters": [
             {
               "Name": "Permeability",
@@ -2242,22 +2141,6 @@
             "Cellular permeability - PK-Sim Standard"
           ],
           "Alternatives": [
-            {
-              "AlternativeName": "Optimized",
-              "GroupName": "COMPOUND_SOLUBILITY"
-            },
-            {
-              "AlternativeName": "Optimized",
-              "GroupName": "COMPOUND_LIPOPHILICITY"
-            },
-            {
-              "AlternativeName": "Simcyp",
-              "GroupName": "COMPOUND_FRACTION_UNBOUND"
-            },
-            {
-              "AlternativeName": "Calculated",
-              "GroupName": "COMPOUND_PERMEABILITY"
-            },
             {
               "AlternativeName": "Optimized",
               "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
