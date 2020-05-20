@@ -7,8 +7,8 @@ The repository contains a [PK-Sim snapshot (*.json) file](https://docs.open-syst
 
 The reference model repositories can be found here:
 
-- Mefenamic acid [[1](#reference)]
-- Dapagliflozin [[2](#reference)]
+- [Mefenamic acid OSP PBPK model](https://github.com/Open-Systems-Pharmacology/Mefenamic-acid-Model)
+- [Dapagliflozin OSP PBPK model](https://github.com/Open-Systems-Pharmacology/Dapagliflozin-Model)
 
 ## Code of conduct
 
@@ -22,7 +22,3 @@ We encourage contribution to the Open Systems Pharmacology community. Before get
 
 The model code is distributed under the [GPLv2 License](https://github.com/Open-Systems-Pharmacology/Suite/blob/develop/LICENSE).
 
-## Reference
-[1] [Mefenamic acid OSP PBPK model](https://github.com/Open-Systems-Pharmacology/Mefenamic-acid-Model)
-
-[2] [Dapagliflozin OSP PBPK model](https://github.com/Open-Systems-Pharmacology/Dapagliflozin-Model)
