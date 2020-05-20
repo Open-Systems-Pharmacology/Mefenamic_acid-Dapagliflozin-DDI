@@ -1,7 +1,7 @@
 # Mefenamic_acid-Dapagliflozin-DDI
 Modeling of published clinical Mefenamic acid-Dapagliflozin-DDI studies for model evaluation.
 
-The repository contains a PK-Sim snapshot (*.json) file containing the respective simulations.
+The repository contains a [PK-Sim snapshot (*.json) file](https://docs.open-systems-pharmacology.org/working-with-pk-sim/pk-sim-documentation/importing-exporting-project-data-models#exporting-project-to-snapshot-loading-project-from-snapshot) containing the respective simulations.
 
 **The latest release of the snapshot can be found [here](../../releases/latest).**
 
